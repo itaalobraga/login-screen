@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#container h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #58a6ff;
+    font-size: 3rem;
+}
+
+#container-img img {
+    margin: 0 15px;
+    max-width: 30px;
+    transition: 0.2s;
+}
+
+#container-img img:hover {
+    opacity: 0.3;
+}
+
+#container-span {
+    font-weight: bold;
+    color: #f0f6fc;
+}
+
+#container-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#container-form form label {
+    font-weight: bold;
+    color: #f0f6fc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#container-form form input {
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #0d1117;
+    display: block;
+    padding: 10px;
+    width: 150px;
+    background-color: #21262d;
+    transition: 0.4s;
+}
+
+#container-form form input:hover:focus {
+    width: 250px;
+}
+
+#container-form form #btnSubmit {
+    margin: auto;
+    padding: 10px;
+    width: 100px;
+    background-color: #58a6ff;
+    color: #f0f6fc;
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#container-form form #btnSubmit:hover {
+    background-color: #21262d;
+    transform: scale(.9);
+}
+
+#banner {
+    z-index: -1;
+    position: absolute;
+    right: -250px;
+    top: 300px;
+    width: 950px;
+    height: 950px;
+    background: rgb(88, 166, 255);
+    background: linear-gradient(
+        68deg,
+        rgba(88, 166, 255, 1) 20%,
+        rgba(33, 38, 45, 1) 100%
+    );
+    border-radius: 100%;
+}
+
+#banner img {
+    max-width: 400px;
+    position: absolute;
+    left: -40px;
+    top: 70px;
+}
+
+@media (max-width: 800px) {
+    #banner {
+        display: none;
+    }
+}
