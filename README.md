@@ -1,3 +1,3 @@
-### login-screen
+# Login-Screen
 ## A login screen made with HTML and CSS.
-# Demo: https://itaalobraga.github.io/login-screen/
+### Demo: https://itaalobraga.github.io/login-screen/
